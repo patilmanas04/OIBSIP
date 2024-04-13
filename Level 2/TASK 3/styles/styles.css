@@ -257,3 +257,13 @@ body{
     border-radius: 8px;
     color: #ffffff;
 }
+
+.empty-message-container{
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.empty-message-container.hide{
+    display: none;
+}

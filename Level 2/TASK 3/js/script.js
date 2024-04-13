@@ -43,10 +43,11 @@ window.addEventListener('load', ()=>{
 
 const displayTodos = (savedTodos)=>{
     const toDoListItemContainer = document.querySelector(".to-do-list-item-container");
+    const toDoListItemContainerCompletedTasks = document.querySelector(".to-do-list-item-container-completed-tasks")
     toDoListItemContainer.innerHTML = "";
-
+    toDoListItemContainerCompletedTasks.innerHTML = "";
+    
     savedTodos.forEach((todo, index)=>{
-
         const toDoListItem = document.createElement('div');
         toDoListItem.classList.add('to-do-list-item');
 
@@ -77,16 +78,20 @@ const displayTodos = (savedTodos)=>{
 
         toDoListItem.appendChild(leftPart);
         toDoListItem.appendChild(rightPart);
-
-        toDoListItemContainer.appendChild(toDoListItem);
-
+        
         if(todo.done){
+            toDoListItemContainerCompletedTasks.appendChild(toDoListItem);
+
             bubble.classList.add('done');
             input.classList.add('done');
+
         }
         else{
+            toDoListItemContainer.appendChild(toDoListItem);
+
             bubble.classList.remove('done');
             input.classList.remove('done');
+
         }
 
         bubble.addEventListener('click', (e)=>{
@@ -94,6 +99,13 @@ const displayTodos = (savedTodos)=>{
             input.classList.toggle('done');
             todo.done = !todo.done;
             localStorage.setItem('todos', JSON.stringify(savedTodos));
+            if(todo.done){
+                toDoListItemContainerCompletedTasks.appendChild(toDoListItem);
+            }
+            else{
+                toDoListItemContainer.appendChild(toDoListItem);
+            }
+            displayTodos(savedTodos);
         });
 
         editButton.addEventListener('click', (e)=>{
@@ -112,4 +124,33 @@ const displayTodos = (savedTodos)=>{
             displayTodos(savedTodos);
         });
     });
+
+    const emptyMessageContainerForPendingTasks = document.getElementById("pending-tasks");
+    const emptyMessageContainerForCompletedTasks = document.getElementById("completed-tasks");
+    const completedTasks = savedTodos.filter(todo => todo.done);
+    const pendingTasks = savedTodos.filter(todo => !todo.done);
+
+    if(completedTasks.length == 0 && pendingTasks.length == 0){
+        emptyMessageContainerForPendingTasks.textContent = "You are all set for today!";
+        emptyMessageContainerForCompletedTasks.textContent = "No tasks completed yet!";
+        emptyMessageContainerForPendingTasks.classList.remove("hide")
+        emptyMessageContainerForCompletedTasks.classList.remove("hide")
+    }
+    else if (completedTasks.length !=0 && pendingTasks.length != 0){
+        emptyMessageContainerForPendingTasks.classList.add("hide")
+        emptyMessageContainerForCompletedTasks.classList.add("hide")
+    }
+    else{
+        if(pendingTasks.length == 0){
+            emptyMessageContainerForPendingTasks.textContent = "You are all set for today!";
+            emptyMessageContainerForPendingTasks.classList.remove("hide")
+            emptyMessageContainerForCompletedTasks.classList.add("hide")
+        }
+        if(completedTasks.length == 0){
+            emptyMessageContainerForCompletedTasks.textContent = "No tasks completed yet!";
+            emptyMessageContainerForCompletedTasks.classList.remove("hide")
+            emptyMessageContainerForPendingTasks.classList.add("hide")
+        }
+    
+    }
 }

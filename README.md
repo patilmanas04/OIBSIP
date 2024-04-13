@@ -39,7 +39,14 @@ Develop a basic to-do app that enables a user to add daily tasks. The to-do web 
 
 ### Screenshots
 
-<!-- ![To-Do App Screenshot](task3_todo_app.png) -->
+*To-Do App Screenshot*
+![To-Do App Screenshot](screenshots/task3ss1.png)
+
+*To-Do App Screenshot*
+![To-Do App Screenshot](screenshots/task3ss2.png)
+
+*To-Do App Screenshot*
+![To-Do App Screenshot](screenshots/task3ss3.png)
 
 ---
 

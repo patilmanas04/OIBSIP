@@ -19,7 +19,7 @@ It takes a little skill to create a calculator with basic mathematical functiona
 ![Calculator Screenshot (Light Mode)](screenshots/task1ss1.png)
 
 *Calculatar Screenshot (Dark Mode)*
-![Calculator Screenshot (Dark Mode)](screenshots/task2ss2.png)
+![Calculator Screenshot (Dark Mode)](screenshots/task1ss2.png)
 
 ---
 
@@ -56,7 +56,7 @@ Create a simple login authentication system using a programming language of your
 
 ### Screenshots
 
-<!-- ![Login Authentication Screenshot](task4_login_auth.png) -->
+
 
 ---
 

@@ -29,7 +29,20 @@ With a basic understanding of HTML and CSS, you can easily create a page for som
 
 ### Screenshots
 
-<!-- ![Admire Page Screenshot](task2_admire_page.png) -->
+*Admire Page screenshot*
+![Admire Page Screenshot](screenshots/task2ss1.png)
+
+*Admire Page screenshot*
+![Admire Page Screenshot](screenshots/task2ss2.png)
+
+*Admire Page screenshot*
+![Admire Page Screenshot](screenshots/task2ss3.png)
+
+*Admire Page screenshot*
+![Admire Page Screenshot](screenshots/task2ss4.png)
+
+*Admire Page screenshot*
+![Admire Page Screenshot](screenshots/task2ss5.png)
 
 ---
 
@@ -56,6 +69,17 @@ Create a simple login authentication system using a programming language of your
 
 ### Screenshots
 
+*Signup Page screenshot*
+![Signup Page Screenshot](screenshots/task4ss1.png)
+
+*Login Page screenshot*
+![Login Page Screenshot](screenshots/task4ss2.png)
+
+*Secured Page screenshot*
+![Secured Page Screenshot](screenshots/task4ss3.png)
+
+*MongoDB database screenshot*
+![MongoDB database Screenshot](screenshots/task4ss4.png)
 
 
 ---

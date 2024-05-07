@@ -3,7 +3,7 @@
 Welcome to my repository for Oasis Infobyte's Level 2 internship tasks. In this level, I have chosen Level 2 and completed the following tasks:
 
 1. [Task 1 - Calculator](https://github.com/patilmanas04/OIBSIP/tree/main/Level%202/TASK%201)
-2. [Task 2 - Page for Someone I Admire](#https://github.com/patilmanas04/OIBSIP/tree/main/Level%202/TASK%202)
+2. [Task 2 - Page for Someone I Admire](https://github.com/patilmanas04/OIBSIP/tree/main/Level%202/TASK%202)
 3. [Task 3 - To-Do App](https://github.com/patilmanas04/OIBSIP/tree/main/Level%202/TASK%203)
 4. [Task 4 - Login Authentication System](https://github.com/patilmanas04/OIBSIP/tree/main/Level%202/TASK%204)
 

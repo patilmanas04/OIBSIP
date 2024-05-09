@@ -27,20 +27,6 @@ window.addEventListener('load', ()=>{
     displayTodos(savedTodos);
 });
 
-`<div class="to-do-list-item">
-    <div class="left-part">
-        <div class="bubble"></div>
-
-        <input type="text" class="display-to-do" value="Task 1" readonly>
-    </div>
-
-    <div class="right-part">
-        <button class="edit-button">Edit</button>
-
-        <button class="remove-button">Remove</button>
-    </div>
-</div>`
-
 const displayTodos = (savedTodos)=>{
     const toDoListItemContainer = document.querySelector(".to-do-list-item-container");
     const toDoListItemContainerCompletedTasks = document.querySelector(".to-do-list-item-container-completed-tasks")
@@ -151,6 +137,5 @@ const displayTodos = (savedTodos)=>{
             emptyMessageContainerForCompletedTasks.classList.remove("hide")
             emptyMessageContainerForPendingTasks.classList.add("hide")
         }
-    
     }
 }

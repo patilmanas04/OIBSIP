@@ -34,7 +34,7 @@ const App = () => {
 		<Router>
 			<AlertBox alert={alert} closeAlert={closeAlert}/>
 			<Routes>
-				<Route exact path="/" element={<Register setUsername={setUsername}/>}/>
+				<Route exact path="/" element={<Register showAlert={showAlert} setUsername={setUsername}/>}/>
 				<Route exact path="/register" element={<Register showAlert={showAlert} setUsername={setUsername}/>}/>
 				<Route exact path="/login" element={<Login setUsername={setUsername} showAlert={showAlert}/>}/>
 				<Route exact path="/secured" element={<SecuredPage username={username} showAlert={showAlert}/>}/>
